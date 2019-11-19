@@ -36,8 +36,8 @@ Word.prototype.detectMouse = function(mX, mY) {
     var w = (20 * 2) + l * 18;
     if (mX > this.x && mX < this.x + w && mY > this.y && mY < this.y + 40) {
         this.detecting = true;
-        this.offsetX = mouseX - this.x;
-        this.offsetY = mouseY - this.y;
+        this.offsetX = touchX - this.x;
+        this.offsetY = touchY - this.y;
     }
     // } else {
     // this.detecting = false;
